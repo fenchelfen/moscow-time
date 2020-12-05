@@ -24,7 +24,7 @@ SECRET_KEY = 'whg+h#$s0by*kn(*p2c24$i)0-)6(x+f++p)p70&p18geqjm(2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['int1.tst.iroha.tech', '163.172.190.188']
 
 MOSCOW_TIME_API = 'http://worldtimeapi.org/api/timezone/Europe/Moscow'
 
