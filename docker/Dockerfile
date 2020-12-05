@@ -10,4 +10,4 @@ RUN pip install --cache-dir=/cache -r requirements.txt
 
 COPY . .
 
-CMD python3 manage.py migrate && uwsgi --ini uwsgi.ini
+CMD python3 manage.py migrate && daphne -b 0.0.0.0 -p 8000 moscow.asgi:application
