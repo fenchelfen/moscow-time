@@ -4,7 +4,7 @@ This is a `Django/uwsgi` application that uses nginx as its reverse proxy.
 Replication is provided by uwsgi running the server in two processes under its own manager, see `uwsgi.ini`
 
 ```
-curl int1.tst.iroha.tech/moscow/time/
+curl -L int1.tst.iroha.tech/moscow/time/
 ```
 
 ```json
