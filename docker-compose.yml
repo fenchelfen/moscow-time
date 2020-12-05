@@ -1,0 +1,19 @@
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - 80:8000
+    restart: always
+    volumes:
+    - .:/app
+    env_file:
+      - .env
+    networks:
+      - project
+
+
+networks:
+  project:
