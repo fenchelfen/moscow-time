@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'whg+h#$s0by*kn(*p2c24$i)0-)6(x+f++p)p70&p18geqjm(2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['int1.tst.iroha.tech', '163.172.190.188']
 
