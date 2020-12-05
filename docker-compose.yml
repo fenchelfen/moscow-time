@@ -6,12 +6,16 @@ services:
     build:
       context: docker/nginx/
     ports:
-      - 80:80
+      - 80
     depends_on:
       - web
     restart: always
     networks:
       - project
+      - nginx-upstream
+    environment:
+      VIRTUAL_HOST: int1.tst.iroha.tech
+      LETSENCRYPT_HOST: int1.tst.iroha.tech
 
   web:
     build:
@@ -27,6 +31,7 @@ services:
     networks:
       - project
 
-
 networks:
   project:
+  nginx-upstream:
+    external: true
